@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Joan Enale</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aspiring Front-End Developer based in Rizal."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="2.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <span class="logo">joan.</span>
+        <div class="menu-bar">
+           <ul class="nav-links">
+            <div id="indicator"></div>
+            <li><a href="/index.html" class="home">Home</a></li>
+            <li><a href="/about.html" class="about">About</a></li>
+            <li><a href="/project.html" class="project">Projects</a></li>
+            <li><a href="/contact.html" class="contact">Contact</a></li>
+            <li><a href="/resume.html" class="resume">Resume</a></li>
+          </ul>
+      </div> 
+      <div class="social-links">
+            <a href="https://www.instagram.com/joanenale/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="https://www.facebook.com/joan.enaleiii/" target="_blank"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+            <a href="https://www.linkedin.com/in/joan-enale-8abb4622b/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" ></i></a>
+            <a href="https://github.com/joanenale21" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+        </div>
+    </nav> 
+
+     <section class="about-section">
+    <div class="about-title">
+      <h2>ABOUT</h2>
+    </div>
+    <div class="sub-title">
+    <span class="sub-text">Get to know me!</span>
+  </div>
+    <div class="about-image">
+      <img src="about.JPG">
+    <div class="about-info">
+      <p>I am Joan Enale, a highly motivated and positive individual currently pursuing a Bachelor of Science in Information Technology at Rizal Technological University. 
+        Driven by a passion for technology and a desire to constantly evolve, I am actively seeking opportunities to enhance my skills in Web Development.
+      My eagerness to learn is fueled by a genuine interest in expanding my knowledge base and pushing myself beyond my comfort zone. This dedication, 
+      coupled with my strong time management skills, ensures that I am always efficient and productive in my endeavors.I am excited for the challenges and opportunities that lie ahead, 
+      and I am committed to applying my knowledge and skills to make a positive impact in the world.</p>
+        <div class="skills">
+      <h5 class="skills-text">Tech & Tools</h5>
+    <div class="skills-bar">
+        <img src="html-5.png">
+        <img src="css-3.png">
+        <img src="c-.png">
+        <img src="figma.png">   
+      </div>
+    </div>
+    </div> 
+  </div>
+   </section>
+
+   <!---- INDICATOR ---->
+  <script>
+const pageName = window.location.pathname;
+const links = document.querySelectorAll('.nav-links li a');
+
+for (let link of links) {
+  if (link.href.includes(pageName)) {
+    link.classList.add('indicator');
+  }
+}
+   </script>
+</body>
+</html>

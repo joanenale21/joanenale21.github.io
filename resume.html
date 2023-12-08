@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Joan Enale</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aspiring Front-End Developer based in Rizal."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="2.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <span class="logo">joan.</span>
+        <div class="menu-bar">
+          <ul class="nav-links">
+            <div id="indicator"></div>
+            <li><a href="/index.html" class="home">Home</a></li>
+            <li><a href="/about.html" class="about">About</a></li>
+            <li><a href="/project.html" class="project">Projects</a></li>
+            <li><a href="/contact.html" class="contact">Contact</a></li>
+            <li><a href="/resume.html" class="resume">Resume</a></li>
+          </ul>
+      </div>  
+      <div class="social-links">
+            <a href="https://www.instagram.com/joanenale/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+            <a href="https://www.facebook.com/joan.enaleiii/" target="_blank"><i class="fa-brands fa-facebook-f fa-xl"></i></a>
+            <a href="https://www.linkedin.com/in/joan-enale-8abb4622b/" target="_blank"><i class="fa-brands fa-linkedin fa-xl" ></i></a>
+            <a href="https://github.com/joanenale21" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+        </div>
+    </nav> 
+    
+    <section class="resume-section">
+        <a href="JOAN-ENALE-RESUME.pdf" download class="btn-btn--download"> Download <span class=".u-bolder">
+            CV</span></a>
+    </section>
+
+    <!---- INDICATOR ---->
+   <script>
+ const pageName = window.location.pathname;
+const links = document.querySelectorAll('.nav-links li a');
+
+for (let link of links) {
+  if (link.href.includes(pageName)) {
+    link.classList.add('indicator');
+  }
+}
+   </script>
+    </body>
+    </html>
